@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth Through Deep Time</title>
+    <meta
+      name="description"
+      content="An illustrated journey through Earth's history, from the Hadean to the Quaternary, in a rustic autumn palette."
+    />
+    <link rel="preconnect" href="https://commons.wikimedia.org" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-video" aria-hidden="true">
+      <video
+        class="site-video__media"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="./assets/images/earth-blue-marble.jpg"
+      >
+        <source src="./assets/video/earth-spin.mp4" type="video/mp4" />
+      </video>
+      <div class="site-video__overlay"></div>
+    </div>
+
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__grain"></div>
+        </div>
+
+        <nav class="topbar">
+          <span class="topbar__brand">Earth Through Deep Time</span>
+          <a href="#timeline">Timeline</a>
+          <a href="#eras">Eras</a>
+          <a href="#periods">Periods</a>
+          <a href="#sources">Sources</a>
+        </nav>
+
+        <div class="hero__content">
+          <p class="eyebrow">Rustic Atlas of Geologic Time</p>
+          <h1>The story of Earth, from molten beginnings to the age of people.</h1>
+          <p class="hero__lede">
+            This site maps the grand sweep of Earth's history across eons, eras,
+            and periods, with autumnal colors and public-domain imagery that
+            evokes lost oceans, coal forests, dinosaurs, and ice-age mammals.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--solid" href="#periods">Explore the Periods</a>
+            <a class="button button--ghost" href="#sources">Public-Domain Credits</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="summary" id="timeline">
+          <div class="section-heading">
+            <p class="eyebrow">At a Glance</p>
+            <h2>Earth is about 4.54 billion years old.</h2>
+          </div>
+          <div class="summary__grid">
+            <article class="stat-card">
+              <span class="stat-card__value">4</span>
+              <p>Major eons shape the broadest chapters of Earth history.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-card__value">3</span>
+              <p>Classic Phanerozoic eras frame the age of visible life.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-card__value">12</span>
+              <p>Named periods here cover the Cambrian through today.</p>
+            </article>
+          </div>
+          <div class="timeline-ribbon" id="timeline-ribbon"></div>
+        </section>
+
+        <section class="eras" id="eras">
+          <div class="section-heading">
+            <p class="eyebrow">Illustrated Chapters</p>
+            <h2>Major worlds layered across deep time.</h2>
+          </div>
+          <div class="era-grid" id="era-grid"></div>
+        </section>
+
+        <section class="periods" id="periods">
+          <div class="section-heading">
+            <p class="eyebrow">All Major Periods</p>
+            <h2>Each period marks a distinct Earth.</h2>
+          </div>
+          <div class="period-grid" id="period-grid"></div>
+        </section>
+
+        <section class="deep-dive" id="deep-dive">
+          <div class="section-heading">
+            <p class="eyebrow">Deep-Dive Articles</p>
+            <h2>Click any period to open a full article.</h2>
+          </div>
+          <article class="article-panel is-empty" id="article-panel" aria-live="polite">
+            <div class="article-panel__placeholder">
+              <p>Select a period above to load a detailed article with tectonics, climate, oceans, life, extinction patterns, image galleries, and further reading.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="notes">
+          <div class="section-heading">
+            <p class="eyebrow">Reading the Timeline</p>
+            <h2>What changes from period to period?</h2>
+          </div>
+          <div class="notes__grid">
+            <article>
+              <h3>Climate</h3>
+              <p>
+                Earth cycles through greenhouse worlds, ice ages, rising seas,
+                and drifting continents.
+              </p>
+            </article>
+            <article>
+              <h3>Life</h3>
+              <p>
+                New body plans appear, ecosystems expand onto land, and mass
+                extinctions reset the stage.
+              </p>
+            </article>
+            <article>
+              <h3>Landscape</h3>
+              <p>
+                Oceans open and close, mountains rise, and the shape of the
+                planet never stays still for long.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="sources" id="sources">
+          <div class="section-heading">
+            <p class="eyebrow">Public-Domain Media</p>
+            <h2>Image sources used for the site.</h2>
+          </div>
+          <div class="source-list" id="source-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
